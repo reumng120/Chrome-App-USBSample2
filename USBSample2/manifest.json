@@ -1,0 +1,19 @@
+{
+  "name": "USB Sample2",
+  "version": "1.0",
+  "manifest_version": 2,
+  "minimum_chrome_version": "23",
+  "description": "USB connection and control",
+  "icons": {
+    "16": "/icons/16.png",
+    "48": "/icons/48.png",
+    "128": "/icons/128.png"
+  },
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "permissions": ["usb"],
+  "optional_permissions": [ {"usbDevices": [{"vendorId": 2424, "productId": 520}]}]
+}
